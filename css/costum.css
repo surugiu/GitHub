@@ -135,9 +135,21 @@ h2{
   font-size: 15px;
 }
 
-#subscribe-box, .form-group {
+#subscribe-box .form-group {
   margin-top: 15px; 
 }
+
+#subscribe-box .btn-warning {
+  background-color: #f39c12;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#subscribe-box .btn-warning:hover {
+  background-color: #f0ad4e;
+}
+
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -205,7 +217,9 @@ h2{
   font-weight: 300;
 }
 
-
+.blog-post-meta .btn-danger:hover {
+  background-color: #d9534f;
+}
 /*
  * Footer
  */
