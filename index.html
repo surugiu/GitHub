@@ -28,11 +28,14 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!--Font open sans-->
+    <!--GOOGLE Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
-    <!--Lato font-->
+   
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300italic,400italic,700italic,300' rel='stylesheet' type='text/css'>
+    <!-- END GOOGLE Fonts-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,9 +60,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar/">Homepage</a></li>
+            <li class="active"><a href="./">Blog <span class="sr-only">(current)</span></a></li>
             <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li><a href="../navbar-fixed-top/">Fourth</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -76,8 +80,10 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+            <h2 class="blog-post-title"><a href=""> Sample blog post</a></h2>
+            <p class="blog-post-meta"><a button type="button" class="btn btn-danger" href="blog-post-link">55 Coments</a> January 1, 2014 by <a href="#">Mark</a></p>
+
+            <img src="img/udemy-banner.png">
 
             <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
             <hr>
@@ -105,11 +111,11 @@
               <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
               <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
             </ol>
-            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.<a href="blog-post-link">Read more</a></p>
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
+            <h2 class="blog-post-title"><a href=""> Another blog post</a></h2>
             <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
 
             <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -121,7 +127,7 @@
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
+            <h2 class="blog-post-title"><a href=""> New feature </a></h2>
             <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -143,10 +149,16 @@
 
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <div class="col-sm-4 blog-sidebar">
+          <div id="subscribe-box" class="sidebar-module sidebar-module-inset">
+            <h4>Like what you're reading? Go VIP</h4>
+            <p>Join today to recive instant update, free learning resources, and a bunch of other awesome stuff. Oh by the way, I hate spaming so don't worry about reciving any of that from me.</p>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+                <p class="center"><a type="submit" class="btn btn-warning">Join for Free</a></p>
+            </form>
           </div>
           <div class="sidebar-module">
             <h4>Archives</h4>
