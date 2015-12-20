@@ -281,3 +281,11 @@ h2{
 .center {
   text-align: center;
 }
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  #subscribe-box h4 {
+    text-align: center;
+  }
+}
