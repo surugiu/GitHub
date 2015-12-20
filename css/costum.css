@@ -198,7 +198,20 @@ h2{
   margin-bottom: 0;
 }
 
+/* Blog Post Page */
+#share-buttons img {
+  width: 55px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
 
+#share-buttons p {
+  font-size: 40px;
+  font-weight: 700;
+}
 /* Pagination */
 .pager {
   margin-bottom: 60px;
@@ -289,3 +302,4 @@ h2{
     text-align: center;
   }
 }
+
