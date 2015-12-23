@@ -111,12 +111,6 @@ h2{
   margin: 0 -15px 15px;
 }
 
-.sidebar-module-inset {
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  border: 5px dashed #e74c3c;
-}
 
 #subscribe-box {
   padding: 15px 20px;
@@ -155,6 +149,8 @@ h2{
   border: 2px solid #efefef;
   border-top: 0;
   border-radius: 3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
   margin-top: 30px;
 }
 
@@ -192,6 +188,16 @@ h2{
 #posts-box li a {
   color: #555;
 }
+
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+    -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 5px dashed #e74c3c;
+}
+
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -223,6 +229,8 @@ h2{
   padding: 10px 20px;
   text-align: center;
   border-radius: 30px;
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
 }
 
 
@@ -274,13 +282,22 @@ h2{
 
 .blog-post-meta .btn-danger:hover {
   background-color: #d9534f;
+
+}
+
+/*Home Page*/
+#home-top {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../img/background.jpg) repeat ;
 }
 
 /* About Pge */
 
-#about img {
+#about img, #home-top img {
   border-radius: 100%;
-  float: left;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
   margin-right: 30px;
   margin-bottom: 10px;
 }
@@ -323,6 +340,8 @@ h2{
   background-color: #eee;
   margin: 5px;
   border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
   box-shadow: 0 1px 1px #999; 
 }
 
@@ -341,6 +360,7 @@ h2{
   padding: 5px;
   margin: 0;
 }
+
 
 
 /*
@@ -377,6 +397,15 @@ h2{
 @media (max-width: 991px) {
   #subscribe-box h4 {
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .xs-center, #about h1{
+    text-align: center;
+  }
+  .sticky-footer {
+    position: static;
   }
 }
 
