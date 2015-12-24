@@ -1,2 +1,0 @@
-# surugiublog.github.io
- blog
