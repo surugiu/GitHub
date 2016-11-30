@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header-content {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+#header-menu {
+    width: 900px;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 1px;
+}
+
+
+#logo {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    padding: 3px;
+    margin: 3px 0 0 5px;
+    font-weight: bold;
+}
+
+#header-menu ul {
+    float: right;
+    margin-top: 7px;
+}
+
+#header-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#header-menu li {
+    display: inline;
+    padding: 3px;
+    margin: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    list-style-type: none;
+    
+}
+
+#header-menu li:hover {
+    border-bottom: 2px solid black;
+    color: green;
+}
+
+.main-width {
+    width: 900px;
+    margin: 0 auto;
+    height: 2000px;
+    margin-top: 50px;
+}
+
+.home-image{
+    height: 409px;
+}
+
+.home-image img {
+    width: 900px;
+}
+
+.servicii {
+    margin-top: 10px;
+    height: 300px;
+    background-color: aquamarine;
+    padding: 20px 30px;
+}
+
+.portofoiu {
+    margin: 10px 0 0 0;
+    height: auto;
+}
+
+.portofoiu li {
+   
+    list-style-type: none;
+    display: inline;
+    padding: 2px;
+}
+
+.portofoiu img {
+    width: 200px;
+    height: 150px;
+}
+
+.despre {
+    margin-top: 10px;
+    height: 200px;
+    background-color: aquamarine;
+    padding: 20px 30px;
+    font-size: 13px;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
