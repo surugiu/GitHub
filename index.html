@@ -14,16 +14,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi, user-scalable=0">
     <link rel="icon" type="image/x-icon" href="baza/design/images/favicon.ico">
         
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-<script src="bootstrap/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="style/dist/css/lightbox.min.css">   
         
+    <script src="style/dist/js/lightbox-plus-jquery.min.js"></script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   
+    <script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+$(document).ready(function(){
+mailto = $("a[href^='mailto:']").attr('href');
+$("a[href^='mailto:']").attr('href',mailto.replace(/_\[\at\]\_/gi,"@"));
+email = $('.mail').html();
+$('.mail').html(email.replace(/_\[\at\]\_/gi,"@"));
+});
+ </script>          
+          
     </head>
     
     
     
-
     <body>
 
         <header>
@@ -33,15 +59,15 @@
             <div id="header-menu">
             
                 <span id="logo">
-                    KITE CONSTRUCTION
+                CONSTRUCTION
                 </span>
                 
                 
                 <ul>
-                    <a href="#servicii" ><li>Servicii</li></a>
-                    <a href="#portofoliu" ><li>Portofoliu</li></a>
-                    <a href="despre" ><li>Despre</li></a>
-                    <a href="#contact" ><li>Contact</li></a>
+                    <li><a href="#servicii" >Servicii</a></li>
+                    <li><a href="#portofoliu" >Portofoliu</a></li>
+                    <li><a href="#despre" >Despre</a></li>
+                    <li><a href="#contact" >Contact</a></li>
                     
                 </ul>
                 
@@ -64,31 +90,43 @@
             
             
             <div class="servicii">
-                <a name="servicii"/>
-                <article>
+                <a name="servicii"> </a>
+                <p>
                 E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci când se uită la aşezarea în pagină. Scopul utilizării a Lorem Ipsum, este acela că are o distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul "Conţinut aici, conţinut acolo", făcându-l să arate ca o engleză citibilă. Multe pachete de publicare pentru calculator şi editoare de pagini web folosesc acum Lorem Ipsum ca model standard de text, iar o cautare de "lorem ipsum"
                 
-                </article>
+                </p>
             </div> <!--Servicii inchis-->
             
             
             <div class="portofoiu">
-            <a name="portofoliu"/>
+            <a name="portofoliu"> </a>
+                
+                
+                
+                    
                 <ul>
-                    <li><a href="#"><img src="img/portofoliu/1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/portofoliu/2.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/portofoliu/3.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="img/portofoliu/4.jpg" alt=""></a></li>
+                    
+                   
+                    <li><a class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="img/portofoliu/3.jpg"><img class="example-image" src="img/portofoliu/3.jpg" alt=""></a></li>
+                    
+                    <li><a class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="img/portofoliu/4.jpg"><img class="example-image" src="img/portofoliu/4.jpg" alt=""></a></li>
+                    
                     <li><a href="#"><img src="img/portofoliu/5.jpg" alt=""></a></li>
                     <li><a href="#"><img src="img/portofoliu/6-1.jpg" alt=""></a></li>
                     <li><a href="#"><img src="img/portofoliu/7.jpg" alt=""></a></li>
                     
                 </ul>
                 
+                
+                
+        
+                
             </div> <!--Portofoliu inchis-->
             
-            <div class="despre">
-            <a name="despre"/>
+            
+            
+            <div class="despre" >
+            <a name="despre"> </a>
                 <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice.</p>
                 <p> un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci când se uită la aşezarea în pagină. Scopul utilizării a Lorem Ipsum, este acela că are o distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul "Conţinut aici, conţinut acolo", făcându-l să arate</p>
                 <p>În ciuda opiniei publice, Lorem Ipsum nu e un simplu text fără sens. El îşi are rădăcinile într-o bucată a literaturii clasice latine din anul 45 î.e.n., făcând-o să aibă mai bine de 2000 ani. Profesorul universitar de latină </p>
@@ -97,14 +135,10 @@
             
             
             <div class="contact">
-            <a name="contact"/>
-                <form>
-                    ...
+            <a name="contact"> </a>
+                <p>Numar Telefon: 070000000</p>
+                <p>E-mail: acoperisuri@gmail.com</p>
                 
-                </form>
-                
-                <HARTA></HARTA>
-            
             </div>
             
             
@@ -114,5 +148,12 @@
 
     </body>
 
+
+
+
+  
+
+        
+    
 
 </html>
