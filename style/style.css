@@ -24,7 +24,7 @@
 
 #logo {
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Open Sans";
     float: left;
     padding: 3px;
     margin: 3px 0 0 5px;
@@ -46,7 +46,7 @@
     display: inline;
     padding: 3px;
     margin: 3px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Open Sans";
     font-size: 15px;
     list-style-type: none;
     text-transform: uppercase;
@@ -75,12 +75,29 @@
 
 .servicii {
     margin-top: 10px;
-    height: 300px;
+    height: auto;
     text-align: center;
     padding: 20px 30px;
     width: 300px;
     margin: 0 auto;
 }
+
+.servicii h3 {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #4c4c4c;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.servicii li {
+    list-style: none; 
+    padding: 9px 0 0 0;
+    font-family: "Open Sans";
+    color: #50676c;
+    text-align: center;
+}
+
 
 .portofoiu {
     margin: 10px 0 0 0;
@@ -100,30 +117,43 @@
 }
 
 .despre {
-    margin-top: 10px;
-    height: 200px;
-   
+    font-family: "Open Sans";
     padding: 20px 30px;
-    font-size: 13px;
+    font-size: 16px;
     text-align: center;
-    
+    color: #50676c;
+    padding-top: 0;
 }
 
 .contact {
     height: 100px;
-    margin-top: 10px;
     text-align: center;
-    padding-top: 50px;
+    padding-bottom: 60px;
+    font-family: "Open Sans";
+    color: #50676c;
 }
 
 
 
+.hr {
+    width: 100%;
+    margin: 70px 0;
+    color: #50676c;
+}
 
 
+.titlu {
+     font-family: "Open Sans";
+    font-size: 25px;
+    color: #4c4c4c;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-
-
-
+.hr-servicii {
+    margin-bottom: 10px;
+}
 
 
 
