@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi, user-scalable=0">
     <link rel="icon" type="image/x-icon" href="baza/design/images/favicon.ico">
     
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />    
+   <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />  -->
     
     <link rel="stylesheet" type="text/css" href="style/style.css">
     
@@ -23,7 +23,17 @@
     <script src="style/dist/js/lightbox-plus-jquery.min.js"></script>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- JS -->
+    <script src="style/js/jquery.js"></script>
+        
+    <link rel="stylesheet" href="style/js/slippry.css">
+        
+    <script src="style/js/slippry.min.js"></script>    
+        
+      
+
    
+      <!-- SECOUND SLIDER -->   
     <script>
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
@@ -46,7 +56,68 @@ $("a[href^='mailto:']").attr('href',mailto.replace(/_\[\at\]\_/gi,"@"));
 email = $('.mail').html();
 $('.mail').html(email.replace(/_\[\at\]\_/gi,"@"));
 });
- </script>          
+    </script>    
+        
+        <!-- FIRST SLIDER STYLE -->
+ <style> 
+    @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
+.news-slider {
+  /* Style the actual content */
+}
+.news-slider .text-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1em;
+  width: 30%;
+  height: 100%;
+}
+.news-slider .text-content h2 {
+  margin: 0;font-family: 'Open Sans Pro', sans-serif;font-size: 23px;
+   text-decoration: none;
+}
+.news-slider .text-content p {
+  margin: 1em 0;font-family: 'Open Sans Pro', sans-serif;font-size: 14px;
+   text-decoration: none;
+}
+.news-slider .text-content a.button-link {
+  padding: 0.25em 0.5em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.news-slider .image-content {
+  line-height: 0;
+}
+.news-slider .image-content img {
+  width: 900px; height: 400px;
+}
+.news-slider .news-pager {
+  text-align: right;
+  display: block;
+  margin: 0.2em 0 0;
+  padding: 0;
+  list-style: none;
+}
+.news-slider .news-pager li {
+  display: inline-block;
+  padding: 0.6em;
+  margin: 0 0 0 1em;
+}
+.news-slider .news-pager li.sy-active a {
+  color: #e6436b;
+}
+.news-slider .news-pager li a {
+  font-family: 'Open Sans Pro', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
+</style>    
+        
           
     </head>
     
@@ -61,7 +132,7 @@ $('.mail').html(email.replace(/_\[\at\]\_/gi,"@"));
             <div id="header-menu">
             
                 <span id="logo">
-                CONSTRUCTION
+                RENOVARII CONSTRUCTII CASE 
                 </span>
                 
                 
@@ -84,27 +155,97 @@ $('.mail').html(email.replace(/_\[\at\]\_/gi,"@"));
         <div class="main-width">
         
         
-            <div class="home-image">
+            <div class="home-slider">
             
-                <img src="img/acoperis.jpg" alt="acoperis-imagine">
+                <section id="news-demo">
+                  <article>
+                  
+                    <div class="image-content"><img src="img/slide-img/IMG_20150312_104028.jpg" alt="demo1_1"></div>
+                  </article>
+                  <article>
+                    <div class="text-content">
+                      <h2>Compartimentare</h2>
+                      <p></p>
+                      <a href="#!" class="button-link read-more">read more</a>
+                    </div>
+                    <div class="image-content"><img src="img/slide-img/IMG_20150312_153051.jpg" alt="demo1_1"></div>
+                  </article>
+                  <article>
+                    <div class="text-content">
+                      <h2>Luminator Interior</h2>
+                      <p></p>
+                      <a href="#!" class="button-link read-more">read more</a>
+                    </div>
+                    <div class="image-content"><img src="img/slide-img/IMG_20150428_174402.jpg" alt="demo1_1"></div>
+                  </article>
+                  <article>
+                    <div class="text-content">
+                      <h2>Usa Plianta</h2>
+                      <p></p>
+                      <a href="#!" class="button-link read-more">read more</a>
+                    </div>
+                    <div class="image-content"><img src="img/slide-img/IMG_20150716_115039.jpg" alt="demo1_1"></div>
+                  </article>
+                  <article>
+                    <div class="text-content">
+                      <h2>Balcon Sticla</h2>
+                      <p></p>
+                      <a href="#!" class="button-link read-more">read more</a>
+                    </div>
+                    <div class="image-content"><img src="img/slide-img/IMG_20150722_115850.jpg" alt="demo1_1"></div>
+                  </article>
+                </section>
             
             </div>
             
-            <hr class="hr-servicii" name="servicii">
+            <hr class="hr-servicii" name="servicii" >
+            
+            <hr> 
+            
             <div class="servicii">
-                    
-                <h3>Servicii</h3>
+                   
                 
-                <ul>
-                    <li>E un fapt bine stabilit că cititorul </li>
-                    <li>Lorem Ipsum, este acela că </li>
-                    <li>folosesc acum Lorem Ipsum ca model  </li>
-                    <li>itibilă. Multe pachete de publicare  </li>
-                    <li>folosesc acum Lorem Ipsum ca model  </li>
-                    <li>E un fapt bine stabilit că cititorul </li>
+                <h3>SERVICII</h3>
+                
+                <ul class="liste">
+                    <li><h4>Sisteme complete de acoperis</h4> </li>
+                    <li>Sistem clasic dulgherie </li>
+                    <li>Termoizolatie sarpanta  </li>
+                    <li>Mansarda </li>
+                    <li>Ferestre de mansarda <a class="link" href="#">Velux Fakro</a> </li>
+                    <li>Acoperisuri </li>
+                    <li><a class="link" href="#">Decra </a>, invelitoare tigla metalica cu acoperire de piatra naturala</li>
+                    <li>Wetterbest, invelitoare tigla metalica</li>
                 </ul>
                 
-                              
+                  <ul class="liste">
+                    <li><h4>Amenajari interioare</h4> </li>
+                    <li>Instalatii sanitare </li>
+                    <li>Instalatii de incalzire  </li>
+                    <li>Rigips, lavabil </li>
+                    <li>Gresie, faianta </li>
+                    <li>Parchet </li>
+                </ul>
+                
+                <ul class="liste">
+                    <li><h4>Amenajari exterioare</h4> </li>
+                    <li>instalatii de canalizare </li>
+                    <li>termosistem fatade  </li>
+                    <li>plcari si/sau zugraveli  </li>
+                 </ul>
+                
+                <div class="oferte">
+                    <h4>Oferim!</h4>
+
+                    <p>Consiliere in locatia beneficiarului, Bucuresti si zone limitrofe (30km), GRATUIT! </p>
+
+                    <p>Consiliere, masuratori, oferte si executie in toata tara.</p>
+
+                    <p>Garantie executie - montajul este efectuat cu echipe proprii la standardele stabilite de producator.</p>
+
+                    <p>Confort, promtitudine si calitate.</p>
+                </div> 
+                
             </div> <!--Servicii inchis-->
              
                     
@@ -113,7 +254,7 @@ $('.mail').html(email.replace(/_\[\at\]\_/gi,"@"));
             
             <div class="portofoiu">
                    
-                <h3 class="titlu">Portofoliu</h3>
+                <h3 class="titlu">PORTOFOLIU</h3>
                                               
                 <ul>
                                        
@@ -135,39 +276,61 @@ $('.mail').html(email.replace(/_\[\at\]\_/gi,"@"));
             
             <div class="despre" >
                 
-            <h3 class="titlu">Despre</h3>
+            <h3 class="titlu">DESPRE</h3>
                 
             <a name="despre"> </a>
-                <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice.</p>
-                <p> un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci când se uită la aşezarea în pagină. Scopul utilizării a Lorem Ipsum, este acela că are o distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul "Conţinut aici, conţinut acolo", făcându-l să arate</p>
-                <p>În ciuda opiniei publice, Lorem Ipsum nu e un simplu text fără sens. El îşi are rădăcinile într-o bucată a literaturii clasice latine din anul 45 î.e.n., făcând-o să aibă mai bine de 2000 ani. Profesorul universitar de latină </p>
-                
+                <p>Succes, proiectul tau este cel mai important!</p>
+                <p> La noi calitatea are pret corect!</p>
+                <p>Daca pui pret pe calitate noi suntem solutia, iar valoarea nu o dau vorbele, ci faptele.</p>
+                        
             </div> <!--Contact inchis-->
             
             <hr class="hr" name="contact">
             
             <div class="contact">
             
-                <h3 class="titlu">Contact</h3>
+                <h3 class="titlu">CONTACT</h3>
                 
-                <p>Numar Telefon: 070000000</p>
-                <p>E-mail: acoperisuri@gmail.com</p>
+                <p>Numar Telefon:<span class="red"> 0728 103 153 </span></p>
+                <p>E-mail:<span class="red"> acoperisuri@gmail.com</span></p>
                 
             </div>
             
             
+            <footer>
+                <p>&copy; RENOVARII CONSTRUCTII CASE  2017</p>
+            </footer>
             
         </div> <!--MAIN MENU inchis-->
+        
+        
+ <!-- FIRST SLIDER --> 
+<script>
+                jQuery('#news-demo').slippry({
+      // general elements & wrapper
+      slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+      elements: 'article', // elments cointaining slide content
 
+      // options
+      adaptiveHeight: false, // height of the sliders adapts to current 
+      captions: false,
+
+      // pager
+      pagerClass: 'news-pager',
+
+      // transitions
+      transition: 'horizontal', // fade, horizontal, kenburns, false
+      speed: 1200,
+      pause: 4000,
+
+      // slideshow
+      autoDirection: 'next'
+    });
+</script>
+        
 
     </body>
 
 
-
-
-  
-
-        
-    
 
 </html>

@@ -23,11 +23,11 @@
 
 
 #logo {
-    font-size: 20px;
+    font-size: 19px;
     font-family: "Open Sans";
     float: left;
     padding: 3px;
-    margin: 3px 0 0 5px;
+    margin: 5px 0 0 5px;
     font-weight: bold;
     color: #3b3b3b;
 }
@@ -65,7 +65,7 @@
     margin-top: 50px;
 }
 
-.home-image{
+.home-slider{
     height: 409px;
 }
 
@@ -78,16 +78,18 @@
     height: auto;
     text-align: center;
     padding: 20px 30px;
-    width: 300px;
+    width: auto;
     margin: 0 auto;
+    padding-left: 70px;
 }
 
 .servicii h3 {
     font-family: "Open Sans";
-    font-size: 25px;
+    font-size: 23px;
     color: #4c4c4c;
     padding: 15px 0;
     text-align: center;
+    
 }
 
 .servicii li {
@@ -98,6 +100,37 @@
     text-align: center;
 }
 
+.liste {
+    float: left;
+    width:250px;
+}
+
+.liste li h4 {
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 7px;
+    font-family: "Open Sans";
+    color: #4c4c4c;
+}
+
+.oferte {
+    width: auto;
+    float: left;
+    text-align: left;
+    padding: 20px 0;
+    font-family: "Open Sans";
+    color: #50676c;
+}
+
+.oferte h4 {
+    font-size: 17px;
+    color: #50676c;
+    padding: 12px 10px;
+}
+
+.oferte p {
+    padding: 9px 0 0 0;
+}
 
 .portofoiu {
     margin: 10px 0 0 0;
@@ -125,6 +158,14 @@
     padding-top: 0;
 }
 
+.despre p {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 25px;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
 .contact {
     height: 100px;
     text-align: center;
@@ -133,17 +174,23 @@
     color: #50676c;
 }
 
-
+.contact p {
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 7px;
+    font-family: "Open Sans";
+    color: #4c4c4c;
+}
 
 .hr {
     width: 100%;
     margin: 70px 0;
-    color: #50676c;
+    color: #ecf0f1;
 }
 
 
 .titlu {
-     font-family: "Open Sans";
+    font-family: "Open Sans";
     font-size: 25px;
     color: #4c4c4c;
     padding: 15px 0;
@@ -152,17 +199,30 @@
 }
 
 .hr-servicii {
-    margin-bottom: 10px;
+   margin-top: 50px;
+   visibility:hidden;
+   padding-top: 10px;
 }
 
+footer p {
+    float: right;
+    color: #50676c;
+    font-size: 16px;
+    margin-left: 50px;
+}
 
+.red {
+    color: #e6436b;
+}
 
+.link {
+    color: #e22553;
+    text-decoration: none;
+}
 
-
-
-
-
-
+.link:hover {
+    color: #ea6183;
+}
 
 
 

@@ -1,0 +1,3 @@
+-open sans
+- delimitare dectiuni 
+-hr
