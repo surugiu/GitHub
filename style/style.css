@@ -139,6 +139,10 @@
     height: auto;
 }
 
+.liste-proiecte {
+    float: left;
+}
+
 .portofoiu ul {
     float: left;
     width: 200px;
