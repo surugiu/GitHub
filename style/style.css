@@ -9,6 +9,7 @@
     width: 100%;
     position: fixed;
     top: 0px;
+    z-index: 100;
 }
 
 #header-menu {
@@ -92,6 +93,10 @@
     
 }
 
+.servicii ul {
+    margin-bottom: 15px;
+}
+
 .servicii li {
     list-style: none; 
     padding: 9px 0 0 0;
@@ -122,14 +127,11 @@
     color: #50676c;
 }
 
-.oferte h4 {
-    font-size: 17px;
-    color: #50676c;
-    padding: 12px 10px;
-}
+
 
 .oferte p {
-    padding: 9px 0 0 0;
+    padding: -2px 0 0 0;
+    font-size: 15px;
 }
 
 .portofoiu {
@@ -163,7 +165,7 @@
     padding: 5px 0;
     font-size: 25px;
     font-family: "Open Sans";
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .contact {
