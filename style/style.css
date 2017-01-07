@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('href="//fonts.googleapis.com/css?family=Open+Sans');
 
 * {
     margin: 0;
@@ -51,7 +51,7 @@
     font-size: 15px;
     list-style-type: none;
     text-transform: uppercase;
-    text-shadow: 0.0425em 0.0425em #cbcbcb; 
+     
 }
 
 #header-menu li a:hover {
@@ -76,11 +76,11 @@
 
 .servicii {
     margin-top: 10px;
-    height: auto;
+    
     text-align: center;
     padding: 20px 30px;
-    width: auto;
-    margin: 0 auto;
+   
+    
     padding-left: 70px;
 }
 
@@ -136,7 +136,8 @@
 
 .portofoliu {
     margin: 10px 0 0 0;
-    height: auto;
+    
+   
 }
 
 .portofoliu ul {
@@ -146,9 +147,10 @@
     padding: 0px 10px;
     margin-bottom: 45px;
     list-style-type: none;
+    margin-top: 15px;
 }
 
-.portofoiu li {
+.portofoliu li {
    
     list-style-type: none;
     display: inline;
@@ -200,10 +202,10 @@
     color: #4c4c4c;
 }
 
-.hr {
+hr {
     width: 100%;
     margin: 70px 0;
-    color: #ecf0f1;
+    border: 1px solid #e6e6e6;
 }
 
 
@@ -216,17 +218,13 @@
     margin-bottom: 10px;
 }
 
-.hr-servicii {
-   margin-top: 50px;
-   visibility:hidden;
-   padding-top: 10px;
-}
 
 footer p {
-    float: right;
     color: #50676c;
     font-size: 16px;
-    margin-left: 50px;
+    font-family: "Open Sans";
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .red {
@@ -234,20 +232,25 @@ footer p {
 }
 
 .link {
-    color: #e22553;
+    color: #000;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .link:hover {
-    color: #ea6183;
+    color: #191919;
+}
+
+.clear {
+    clear:both;
 }
 
 
-@media only screen and (max-width: 	320px) {
+@media only screen and (max-width: 	600px) {
     /* For mobile phones: */
     
     #header-content {
-    width: 320px;
+    width: 600px;
     margin: 0 auto;
     height: auto;
     position: absolute;
@@ -258,37 +261,39 @@ footer p {
        float: left;
         height: auto;
         background-color: #ecf0f1;
-        width: 320px;
+        width: 600px;
+        text-align: center;
+        
+    }
+    
+     #header-menu li {
+        text-align: center;
+        float: left;
+        width: 600px;
+        text-align: center;
+        font-size: 18px;
     }
     
     #logo {
-        font-size: 17px;
-        width: 320px;
+        font-size: 20px;
+        width: 600px;
         margin: 0 auto;
         margin-left: 19px;
     }
     
-    
-    #header-menu li {
        
-        float: left;
-        width: 320px;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    
     .home-slider {
         visibility: hidden;
         margin-bottom: -390px;
     }
     
     .main-width{
-        width: 320px;
+        width: 600px;
     }
     
     .servicii {
         margin: 0 auto;
+        margin-top: -20px;
     }
     
     .servicii h3 {
@@ -298,25 +303,22 @@ footer p {
     }
     
     .servicii ul {
-       width: 320px;
+       width: 600px;
        margin: 0 auto;
        margin-left: -75px;
-        font-size: 14px;
+       font-size: 14px;
+        text-align: center;
     }
     
     .portofoliu {
-        width: 320px;
+        width: 600px;
         margin-top: -60px;
     }
     
-    .portofoliu ul {
-        margin: 0 auto;
-        margin: 10px 10px 34px 50px;
-        list-style-type: none;
-    }
+    
     
     .titlu-lucrari {
-        padding-top: 16px; 
+        
     }
     
     .despre {
@@ -326,6 +328,13 @@ footer p {
     
     .despre p {
         font-size: 14px;
+    }
+    
+    .portofoliu ul {
+        margin: 0 auto;
+        margin: 10px 10px 34px 50px;
+        list-style-type: none;
+        margin-top: 20px;
     }
     
     .contact {
@@ -346,6 +355,14 @@ footer p {
     .titlu {
         font-size: 19px;
         margin: 0 0;
+    }
+    
+    .hr {
+        visibility: hidden;
+    }
+    
+    .hr-servicii {
+        width: 320px;
     }
 }
 
